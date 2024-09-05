@@ -8,5 +8,5 @@
 import Foundation
 
 /// Represents the blueprint for a building, for example a hospital.
-protocol House: Identifiable, Named, Exemplifiable {
+public protocol House: Identifiable, Named, Exemplifiable {
 }

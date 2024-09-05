@@ -8,7 +8,7 @@
 import Foundation
 
 /// Types conform to the 'exemplifiable'-protocol. The have implementations to make sure there are examples of its own type **Self**.
-protocol Exemplifiable {
+public protocol Exemplifiable {
     /// Makes examples of its own type **Self**.
     /// - Returns: Self
     static func makeExample() -> Self

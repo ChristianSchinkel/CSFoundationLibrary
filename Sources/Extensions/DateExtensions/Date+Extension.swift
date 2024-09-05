@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     /// Returns a date that represents the start of the day.
     public var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
@@ -73,7 +73,7 @@ extension Date {
 }
 
 
-extension Date {
+public extension Date {
     /// Calculate a Date() from DateComponents().
     /// - Parameters:
     ///   - year: Int()

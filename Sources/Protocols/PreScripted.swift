@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PreScripted {
+public protocol PreScripted {
     var asNeeded: Bool { get set }
     var asNeededMaxDoseAmount: Double { get set }
     var asNeededMaxDosePerDayDate: Date { get set }

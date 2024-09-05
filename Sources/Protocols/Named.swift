@@ -8,6 +8,6 @@
 import Foundation
 
 /// Types that rely on this protocol have must have a name-property (must be named).
-protocol Named: Identifiable {
+public protocol Named: Identifiable {
     var name: String { get set }
 }

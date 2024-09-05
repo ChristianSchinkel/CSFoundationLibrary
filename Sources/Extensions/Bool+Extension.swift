@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Bool {
+public extension Bool {
     /// **Boolean** representation as **Integer**: *true* *returns* one (1) and *false* *returns* zero (0).
     public var representedAsInteger: Int {
         // print("Bool converts to Integer.")

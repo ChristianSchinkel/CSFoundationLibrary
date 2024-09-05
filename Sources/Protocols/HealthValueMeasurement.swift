@@ -8,7 +8,7 @@
 import Foundation
 
 /// Requires that a type object is identifiable by "id" for example "UUID", types must have a name and a unit.
-protocol HealthValueMeasurement: Identifiable, Codable, Named {
+public protocol HealthValueMeasurement: Identifiable, Codable, Named {
     var date: Date { get set }
     var value: Double { get set }
     var unit: String { get set }
