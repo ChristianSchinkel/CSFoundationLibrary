@@ -11,5 +11,5 @@ import Foundation
 public protocol Exemplifiable {
     /// Makes examples of its own type **Self**.
     /// - Returns: Self
-    static func makeExample() -> Self
+    public static func makeExample() -> Self
 }
