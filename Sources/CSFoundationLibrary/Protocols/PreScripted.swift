@@ -8,39 +8,39 @@
 import Foundation
 
 public protocol PreScripted {
-    public var asNeeded: Bool { get set }
-    public var asNeededMaxDoseAmount: Double { get set }
-    public var asNeededMaxDosePerDayDate: Date { get set }
-    public var asNeededMaxDoseStrengthValue: Double { get set }
-    public var asNeededMaxDoseStrengthValueUnit: String { get set }
+    var asNeeded: Bool { get set }
+    var asNeededMaxDoseAmount: Double { get set }
+    var asNeededMaxDosePerDayDate: Date { get set }
+    var asNeededMaxDoseStrengthValue: Double { get set }
+    var asNeededMaxDoseStrengthValueUnit: String { get set }
     
-    public var frequency: String { get set }
-    public var givenDate: Date { get set }
-    public var instruction: String { get set }
+    var frequency: String { get set }
+    var givenDate: Date { get set }
+    var instruction: String { get set }
     
-    public var isGiven: Bool { get set }
-    public var isPlanned: Bool { get set }
-    public var isPrescripted: Bool { get set }
-    public var isSkipped: Bool { get set }
+    var isGiven: Bool { get set }
+    var isPlanned: Bool { get set }
+    var isPrescripted: Bool { get set }
+    var isSkipped: Bool { get set }
     
-    public var medicineActiveSubstance: String { get set }
-    public var medicineDoseAmount: Double { get set }
-    public var medicineAmountValue: Double { get set }
-    public var medicineAmountValueUnit: String { get set }
-    public var medicineForm: String { get set }
-    public var medicineName: String { get set }
-    public var medicineStrengthValue: Double { get set }
-    public var medicineStrengthValueUnit: String { get set }
+    var medicineActiveSubstance: String { get set }
+    var medicineDoseAmount: Double { get set }
+    var medicineAmountValue: Double { get set }
+    var medicineAmountValueUnit: String { get set }
+    var medicineForm: String { get set }
+    var medicineName: String { get set }
+    var medicineStrengthValue: Double { get set }
+    var medicineStrengthValueUnit: String { get set }
     
-    public var modeOfAdministration: String { get set }
-    public var reasonOfPrescribing: String { get set }
+    var modeOfAdministration: String { get set }
+    var reasonOfPrescribing: String { get set }
     
-    public var shouldNotBeReplaced: Bool { get set }
-    public var shouldNotBeReplacedReason: String { get set }
+    var shouldNotBeReplaced: Bool { get set }
+    var shouldNotBeReplacedReason: String { get set }
     
-    public var skippedDate: Date { get set }
+    var skippedDate: Date { get set }
     
-    public var treatmentDurationEndDate: Date { get set }
-    public var treatmentDurationEndReason: String { get set }
-    public var treatmentDurationStartDate: Date { get set }
+    var treatmentDurationEndDate: Date { get set }
+    var treatmentDurationEndReason: String { get set }
+    var treatmentDurationStartDate: Date { get set }
 }

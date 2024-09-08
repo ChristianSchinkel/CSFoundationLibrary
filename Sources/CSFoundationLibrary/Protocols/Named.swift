@@ -8,6 +8,7 @@
 import Foundation
 
 /// Types that rely on this protocol have must have a name-property (must be named).
+@available(iOS 13.0, *)
 public protocol Named: Identifiable {
-    public var name: String { get set }
+    var name: String { get set }
 }

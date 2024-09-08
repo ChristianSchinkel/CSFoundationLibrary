@@ -8,8 +8,9 @@
 import Foundation
 
 /// Requires that a type object is identifiable by "id" for example "UUID", types must have a name and a unit.
+@available(iOS 13.0, *)
 public protocol HealthValueMeasurement: Identifiable, Codable, Named {
-    public var date: Date { get set }
-    public var value: Double { get set }
-    public var unit: String { get set }
+    var date: Date { get set }
+    var ue: Double { get set }
+    var unit: String { get set }
 }

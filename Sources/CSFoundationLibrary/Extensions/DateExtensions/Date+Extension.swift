@@ -9,34 +9,34 @@ import Foundation
 
 public extension Date {
     /// Returns a date that represents the start of the day.
-    public var startOfDay: Date {
+    var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
     }
     /// Returns a date that represents the end of the day.
-    public var endOfDay: Date {
+    var endOfDay: Date {
         var components = DateComponents()
         components.day = 1
         components.second = -1
         return Calendar.current.date(byAdding: components, to: startOfDay)!
     }
     /// Returns a date that represents the start of the week.
-    public var startOfWeek: Date {
+    var startOfWeek: Date {
         return Calendar.current.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!
     }
     /// Returns a date that represents the end of the week.
-    public var endOfWeek: Date {
+    var endOfWeek: Date {
         var components = DateComponents()
         components.weekOfYear = 1
         components.second = -1
         return Calendar.current.date(byAdding: components, to: startOfWeek)!
     }
     /// Returns a date that represents the start of the month.
-    public var startOfMonth: Date {
+    var startOfMonth: Date {
         let components = Calendar.current.dateComponents([.year, .month], from: startOfDay)
         return Calendar.current.date(from: components)!
     }
     /// Returns a date that represents the end of the month.
-    public var endOfMonth: Date {
+    var endOfMonth: Date {
         var components = DateComponents()
         components.month = 1
         components.second = -1
@@ -58,7 +58,7 @@ public extension Date {
         return date.addingTimeInterval(TimeInterval(oneDayInSeconds))
     }
     /// Adding time-interval (two weeks) to a given date-instance.
-    public var twoWeeksLater: Date {
+    var twoWeeksLater: Date {
         let twoWeeksInSeconds = 60 * 60 * 24 * 14
         let twl = self.addingTimeInterval(TimeInterval(twoWeeksInSeconds))
         return twl

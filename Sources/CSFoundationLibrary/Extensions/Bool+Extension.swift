@@ -9,7 +9,7 @@ import Foundation
 
 public extension Bool {
     /// **Boolean** representation as **Integer**: *true* *returns* one (1) and *false* *returns* zero (0).
-    public var representedAsInteger: Int {
+    var representedAsInteger: Int {
         // print("Bool converts to Integer.")
         if self == true {
             return 1
@@ -20,7 +20,7 @@ public extension Bool {
     
     /// **Boolean** representation as **Double**: *true* *returns* one (1) and *false* *returns* zero (0).
     /// *The underlying computational operation is done by '**var** representedAsInteger'.
-    public var representedAsDouble: Double {
+    var representedAsDouble: Double {
         // print("Bool converts to Double.")
         return Double(representedAsInteger)
     }
