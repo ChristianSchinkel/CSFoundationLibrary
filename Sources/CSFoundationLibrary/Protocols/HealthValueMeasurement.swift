@@ -11,6 +11,6 @@ import Foundation
 @available(iOS 13.0, *)
 public protocol HealthValueMeasurement: Identifiable, Codable, Named {
     var date: Date { get set }
-    var ue: Double { get set }
+    var value: Double { get set }
     var unit: String { get set }
 }
